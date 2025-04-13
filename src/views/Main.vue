@@ -38,7 +38,7 @@ import PromotionalSection from "../components/PromotionalSection.vue";
     </section>
     <PopularProducts />
     <!-- STROKE -->
-    <div class="stroke w-full h-[1px] bg-[#FFC844] mt-9"></div>
+    <div class="stroke w-full h-[1px] bg-[#FFC844] mt-20"></div>
     <!-- STROKE -->
     <PromotionalSection />
   </main>

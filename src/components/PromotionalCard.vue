@@ -1,12 +1,12 @@
 <template>
   <article
-    class="self-stretch my-auto text-2xl leading-none rounded-none min-w-60 w-[824px] max-md:max-w-full"
+    class="w-[824px] min-w-[396px] flex-shrink self-stretch my-auto text-2xl max-lg:max-w-[600px] leading-none rounded-none"
   >
     <div
-      class="flex relative flex-col items-start px-16 py-28 w-full rounded-none min-h-[519px] max-md:px-5 max-md:pb-24 max-md:max-w-full"
+      class="flex relative flex-col items-start px-16 py-28 w-full rounded-none max-h-[519px] max-md:px-5 max-md:pb-24 max-md:max-w-full"
     >
       <img
-        src="https://cdn.builder.io/api/v1/image/assets/TEMP/a66ead1a25a3c8db6368ac4c47dd2aac93b31a15?placeholderIfAbsent=true&apiKey=dc96ebec1f624997a4c41b0d007c327b"
+        src="../assets/promCardFrame.svg"
         alt="Autumn sale background"
         class="object-cover absolute inset-0 size-full"
       />

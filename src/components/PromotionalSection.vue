@@ -1,7 +1,14 @@
 <template>
-  <section class="flex justify-between items-center">
+  <section
+    class="flex-col gap-8 justify-start max-w-[1252px] w-full mt-14 m-auto"
+  >
+    <h2
+      class="self-baseline text-left text-[#151515] text-3xl font-bold leading-[55px] max-md:text-2xl max-md:leading-10"
+    >
+      Акции, скидки
+    </h2>
     <div
-      class="flex flex-wrap gap-8 justify-between items-center self-stretch my-auto w-[1252px] max-md:max-w-full"
+      class="flex gap-8 self-stretch my-auto max-w-full max-lg:flex-wrap max-lg:justify-center max-md:max-w-full"
     >
       <PromotionalCard />
       <SpecialOfferCard />
