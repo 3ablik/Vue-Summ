@@ -6,7 +6,7 @@
       class="flex relative flex-col items-start px-10 pt-14 pb-80 w-full rounded-none aspect-[0.763] max-md:px-5 max-md:pb-24"
     >
       <img
-        src="../assets/promCardFrame2.svg"
+        src="../../../assets/promCardFrame2.svg"
         alt="Kitchen tables special offer background"
         class="object-cover absolute inset-0 size-full"
       />

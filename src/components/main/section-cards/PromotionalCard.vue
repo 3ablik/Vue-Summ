@@ -6,7 +6,7 @@
       class="flex relative flex-col items-start px-16 py-28 w-full rounded-none max-h-[519px] max-md:px-5 max-md:pb-24 max-md:max-w-full"
     >
       <img
-        src="../assets/promCardFrame.svg"
+        src="../../../assets/promCardFrame.svg"
         alt="Autumn sale background"
         class="object-cover absolute inset-0 size-full"
       />

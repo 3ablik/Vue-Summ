@@ -1,8 +1,9 @@
 <script setup>
-import PopularProducts from "../components/PopularProducts.vue";
-import PromotionalSection from "../components/PromotionalSection.vue";
-import ProductCategoryCard from "../components/ProductCategoryCard.vue";
-import InfoCard from "../components/InfoCard.vue";
+import PopularProducts from "../components/main/section-cards/PopularProducts.vue";
+import PromotionalSection from "../components/main/section-cards/PromotionalSection.vue";
+import ProductCategoryCard from "../components/main/section-cards/ProductCategoryCard.vue";
+import InfoCard from "../components/main/section-cards/InfoCard.vue";
+import FooterComponent from "../components/footer/FooterComponent.vue";
 </script>
 
 <template>
@@ -40,7 +41,7 @@ import InfoCard from "../components/InfoCard.vue";
     </section>
     <PopularProducts />
     <!-- STROKE -->
-    <div class="stroke w-full h-[1px] bg-[#FFC844] mt-20"></div>
+    <div class="stroke w-full max-w-[1252px] h-[1px] bg-[#FFC844] mt-20"></div>
     <!-- STROKE -->
     <PromotionalSection />
     <section class="mt-[55px] max-md:mt-[30px]">
@@ -50,7 +51,7 @@ import InfoCard from "../components/InfoCard.vue";
         Наши категории товаров
       </h2>
       <div
-        class="flex flex-wrap gap-8 mb-24 max-lg:flex-col max-lg:gap-5 max-lg:items-center"
+        class="flex flex-wrap justify-center mt-[64px] gap-8 max-lg:flex-col max-lg:gap-5 max-lg:items-center"
       >
         <ProductCategoryCard
           title="Шкафы (МДФ)"
@@ -69,12 +70,22 @@ import InfoCard from "../components/InfoCard.vue";
         />
       </div>
     </section>
-    <section>
-      <div class="flex gap-5 max-lg:flex-col max-lg:gap-5 max-lg:items-center">
+    <!-- STROKE -->
+    <div class="stroke w-full max-w-[1252px] h-[1px] bg-[#FFC844] mt-12"></div>
+    <!-- STROKE -->
+    <section class="mt-[100px] max-md:mt-[30px] mb-30">
+      <h2
+        class="text-3xl font-bold leading-8 text-neutral-900 text-left w-full max-w-[1252px]"
+      >
+        Доставка и оплата
+      </h2>
+      <div
+        class="flex gap-5 mt-14 flex-wrap justify-center max-lg:flex-col max-lg:gap-5 max-lg:items-center"
+      >
         <InfoCard
           title="Условия доставки"
           description="Узнайте подробности о нашей бесплатной доставке и профессиональной сборке."
-          image="/src/assets/promCardFrame.svg"
+          image="/src/assets/deliveryImg.svg"
           altText="Delivery conditions"
         />
         <InfoCard
@@ -92,6 +103,7 @@ import InfoCard from "../components/InfoCard.vue";
       </div>
     </section>
   </main>
+  <FooterComponent />
 </template>
 
 <style scoped>
