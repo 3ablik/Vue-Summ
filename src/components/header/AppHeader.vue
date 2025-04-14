@@ -7,7 +7,7 @@
         <router-link to="/">
           <img
             class="logo"
-            src="../assets/logo.svg"
+            src="../../assets/logo.svg"
             width="125"
             height="125"
             onclick=""
@@ -19,7 +19,7 @@
           >
             <img
               class="search-img max-sm:hidden"
-              src="../assets/search.svg"
+              src="../../assets/search.svg"
               width="20"
               height="20"
             />

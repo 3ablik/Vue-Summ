@@ -47,7 +47,7 @@
 <script setup>
 import { computed, onMounted } from "vue";
 import { useStore } from "vuex";
-import ProductCard from "./ProductCard.vue";
+import ProductCard from "../../main/product-cards/ProductCard.vue";
 
 const store = useStore();
 console.log(store);

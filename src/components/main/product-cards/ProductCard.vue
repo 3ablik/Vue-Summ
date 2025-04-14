@@ -1,17 +1,21 @@
-<script setup lang="ts">
+<script setup>
 import ProductLabel from "./ProductLabel.vue";
 
-interface Props {
-  image: string;
-  category: string;
-  name: string;
-  discount: string;
-  discountPrice: string;
-  price?: string;
-  isNew?: boolean;
-}
-
-defineProps<Props>();
+const props = defineProps({
+  image: String,
+  category: String,
+  name: String,
+  discount: String,
+  discountPrice: String,
+  price: {
+    type: String,
+    required: false,
+  },
+  isNew: {
+    type: Boolean,
+    required: false,
+  },
+});
 </script>
 
 <template>
