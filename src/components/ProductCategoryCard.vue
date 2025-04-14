@@ -3,7 +3,7 @@
     class="overflow-hidden relative rounded-2xl h-[486px] w-[396px] max-sm:w-full max-sm:h-[400px]"
   >
     <div
-      class="bg-center bg-cover size-full"
+      class="bg-center bg-cover size-full bg-gradient-to-t from-black  to-white bg-blend-overlay	"
       :style="{ backgroundImage: `url(${backgroundImage})` }"
     ></div>
     <div class="absolute top-0 left-0 size-full"></div>
