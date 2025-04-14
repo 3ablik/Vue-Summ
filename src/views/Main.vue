@@ -1,10 +1,12 @@
 <script setup>
 import PopularProducts from "../components/PopularProducts.vue";
 import PromotionalSection from "../components/PromotionalSection.vue";
+import ProductCategoryCard from "../components/ProductCategoryCard.vue";
+import InfoCard from "../components/InfoCard.vue";
 </script>
 
 <template>
-  <main class="w-full h-full bg-[#ffffff]">
+  <main class="w-full h-full bg-[#ffffff] flex flex-col items-center">
     <section class="overflow-hidden relative w-full h-[505px] mt-11">
       <img src="../assets/Frame 4.svg" class="object-cover size-full" />
 
@@ -41,6 +43,50 @@ import PromotionalSection from "../components/PromotionalSection.vue";
     <div class="stroke w-full h-[1px] bg-[#FFC844] mt-20"></div>
     <!-- STROKE -->
     <PromotionalSection />
+    <section>
+      <div
+        class="flex gap-8 mb-24 max-md:flex-col max-md:gap-5 max-md:items-center"
+      >
+        <ProductCategoryCard
+          title="Шкафы (МДФ)"
+          description="Стильные и прочные шкафы из МДФ для хранения и организации пространства."
+          backgroundImage="../assets/shkafs"
+        />
+        <ProductCategoryCard
+          title="Шкафы (распашные)"
+          description="Классические распашные шкафы с удобными дверцами для вашего интерьера."
+          backgroundImage="../assets/shkafsOther"
+        />
+        <ProductCategoryCard
+          title="Шкафы (купе)"
+          description="Классические распашные шкафы с удобными дверцами для вашего интерьера."
+          backgroundImage="../assets/Rectangle 1669.svg"
+        />
+        <img src="../assets/aboutImg.svg" />
+      </div>
+    </section>
+    <section>
+      <div class="flex gap-5 max-md:flex-col max-md:gap-5 max-md:items-center">
+        <InfoCard
+          title="Условия доставки"
+          description="Узнайте подробности о нашей бесплатной доставке и профессиональной сборке."
+          image="../assets/promCardFrame.svg"
+          altText="Delivery conditions"
+        />
+        <InfoCard
+          title="Условия оплаты"
+          description="Откройте все доступные способы оплаты и условия рассрочки."
+          image="../assets/paymentImg.svg"
+          altText="Payment conditions"
+        />
+        <InfoCard
+          title="О компании"
+          description="Узнайте больше о компании и наших преимуществах."
+          image="../assets/aboutImg.svg"
+          altText="About company"
+        />
+      </div>
+    </section>
   </main>
 </template>
 
