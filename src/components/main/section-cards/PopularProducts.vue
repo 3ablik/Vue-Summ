@@ -11,34 +11,38 @@
       <div
         class="flex justify-center gap-8 flex-wrap max-md:gap-6 max-sm:gap-4"
       >
-        <ProductCard
-          v-for="product in products.slice(0, 2)"
-          :key="product.id"
-          :id="product.id"
-          :image="product.image"
-          :category="product.category"
-          :name="product.name"
-          :discount="product.discount"
-          :discountPrice="product.discountPrice"
-          :price="product.price"
-          :isNew="product.new"
-        />
+        <div v-for="product in products.slice(0, 2)">
+          <router-link :to="'/product/' + product.id"
+            ><ProductCard
+              :key="product.id"
+              :id="product.id"
+              :image="product.image"
+              :category="product.category"
+              :name="product.name"
+              :discount="product.discount"
+              :discountPrice="product.discountPrice"
+              :price="product.price"
+              :isNew="product.new"
+          /></router-link>
+        </div>
       </div>
       <div
         class="flex justify-center gap-8 flex-wrap max-md:gap-6 max-sm:gap-4"
       >
-        <ProductCard
-          v-for="product in products.slice(2, 4)"
-          :key="product.id"
-          :id="product.id"
-          :image="product.image"
-          :category="product.category"
-          :name="product.name"
-          :discount="product.discount"
-          :discountPrice="product.discountPrice"
-          :price="product.price"
-          :isNew="product.new"
-        />
+        <div v-for="product in products.slice(2, 4)">
+          <router-link :to="'/product/' + product.id"
+            ><ProductCard
+              :key="product.id"
+              :id="product.id"
+              :image="product.image"
+              :category="product.category"
+              :name="product.name"
+              :discount="product.discount"
+              :discountPrice="product.discountPrice"
+              :price="product.price"
+              :isNew="product.new"
+          /></router-link>
+        </div>
       </div>
     </div>
   </section>
