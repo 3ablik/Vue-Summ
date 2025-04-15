@@ -5,7 +5,7 @@ import ProductCategoryCard from "../components/main/section-cards/ProductCategor
 import InfoCard from "../components/main/section-cards/InfoCard.vue";
 import FooterComponent from "../components/footer/FooterComponent.vue";
 </script>
-
+<!-- test -->
 <template>
   <main class="w-full h-full bg-[#ffffff] flex flex-col items-center">
     <section class="overflow-hidden relative w-full h-[505px] mt-11">
