@@ -86,7 +86,7 @@
         </svg>
         <router-link
           class="nav-link text-[16px] max-md:text-[14px]"
-          to="/catalog"
+          to="/catalog/none"
           >Каталог</router-link
         >
         <router-link class="nav-link text-[16px] max-md:text-[14px]" to="/sale"

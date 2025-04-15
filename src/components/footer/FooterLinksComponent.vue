@@ -9,7 +9,18 @@
         v-for="(item, index) in info.links"
         :key="index"
       >
-        <router-link :to="`/catalog/${item.name}`">{{ item.name }}</router-link>
+        <router-link
+          v-if="
+            item.name == 'О компании' ||
+            item.name == 'Cвяжитесь с нами' ||
+            item.name == 'Акции'
+          "
+          :to="`/${item.linkRoute}`"
+          >{{ item.name }}</router-link
+        >
+        <router-link v-else :to="`/catalog/${item.name}`">{{
+          item.name
+        }}</router-link>
       </li>
     </ul>
   </div>

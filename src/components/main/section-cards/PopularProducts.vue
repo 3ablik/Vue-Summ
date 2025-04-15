@@ -5,7 +5,7 @@
     <h2
       class="text-3xl font-bold leading-8 text-neutral-900 text-left w-full max-w-[1252px]"
     >
-      Популярные товары
+      {{ name }}
     </h2>
     <div class="flex flex-wrap justify-center max-w-[1252px]">
       <div
@@ -49,6 +49,10 @@
 </template>
 
 <script setup>
+defineProps({
+  name: String,
+});
+
 import { computed, onMounted } from "vue";
 import { useStore } from "vuex";
 import ProductCard from "../../main/product-cards/ProductCard.vue";

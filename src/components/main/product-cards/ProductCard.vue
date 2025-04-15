@@ -25,7 +25,7 @@ const props = defineProps({
     <div class="relative h-[221px] w-[289px]">
       <img :src="image" class="object-cover rounded-xl size-full" />
       <div v-if="isNew" class="absolute top-4 left-[15px]">
-        <ProductLabel type="new" />>
+        <ProductLabel type="new" />
       </div>
       <div v-if="discount" class="absolute top-4 left-[15px]">
         <ProductLabel type="discount" :price="price" :percent="discountPrice" />
