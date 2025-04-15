@@ -3,7 +3,7 @@ import PopularProducts from "../components/main/section-cards/PopularProducts.vu
 import PromotionalSection from "../components/main/section-cards/PromotionalSection.vue";
 import ProductCategoryCard from "../components/main/section-cards/ProductCategoryCard.vue";
 import InfoCard from "../components/main/section-cards/InfoCard.vue";
-import FooterComponent from "../components/footer/FooterComponent.vue";
+import FooterComponent from "../components/footer/AppFooter.vue";
 </script>
 
 <template>
@@ -39,7 +39,7 @@ import FooterComponent from "../components/footer/FooterComponent.vue";
         </button>
       </div>
     </section>
-    <PopularProducts />
+    <PopularProducts name="Популярные товары" />
     <!-- STROKE -->
     <div class="stroke w-full max-w-[1252px] h-[1px] bg-[#FFC844] mt-20"></div>
     <!-- STROKE -->
@@ -103,7 +103,6 @@ import FooterComponent from "../components/footer/FooterComponent.vue";
       </div>
     </section>
   </main>
-  <FooterComponent />
 </template>
 
 <style scoped>

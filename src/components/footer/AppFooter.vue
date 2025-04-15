@@ -68,18 +68,17 @@ export default {
         },
         {
           title: "навигация",
-          linkRoute: { base: "Catalog" },
+          linkRoute: "/",
 
           links: [
-            { name: "О компании" },
-            { name: "Акции" },
-            { name: "Доставка и оплата" },
+            { name: "О компании", linkRoute: "about" },
+            { name: "Акции", linkRoute: "sales" },
           ],
         },
         {
           title: "контакты",
-          linkRoute: { base: "Catalog" },
-          links: [{ name: "Cвяжитесь с нами" }],
+          linkRoute: "/",
+          links: { name: "Cвяжитесь с нами", linkRoute: "contacts" },
         },
       ],
     };

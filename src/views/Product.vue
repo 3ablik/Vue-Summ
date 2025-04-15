@@ -1,21 +1,22 @@
 <template>
-  <main class="flex flex-col items-start rounded-none">
-    <div class="w-full max-w-[1153px] max-md:max-w-full">
+  <main class="flex flex-col items-center rounded-none bg-white">
+    <section class="w-full max-w-[1267px] max-md:max-w-full">
       <div class="flex gap-5 max-md:flex-col">
-        <section class="w-[56%] max-md:ml-0 max-md:w-full">
+        <div class="w-[56%] max-md:ml-0 max-md:w-full">
           <ProductGallery
             :main-image="product?.big__picture"
             :thumbnails="product.images"
           />
-        </section>
-        <section class="ml-5 w-[44%] max-md:ml-0 max-md:w-full">
+        </div>
+        <div class="ml-5 w-[44%] max-md:ml-0 max-md:w-full">
           <ProductInfo :product="product" />
-        </section>
+        </div>
       </div>
-    </div>
-    <ProductSpecifications
-      :specification-image="'https://cdn.builder.io/api/v1/image/assets/TEMP/1d2ea030194b6e7364aead4b38686a4155904a58?placeholderIfAbsent=true&apiKey=dc96ebec1f624997a4c41b0d007c327b'"
-    />
+    </section>
+    <ProductSpecifications />
+    <section class="w-full max-w-[1366px] max-md:max-w-full mb-10">
+      <PopularProducts :name="'Похожие товары'" />
+    </section>
   </main>
 </template>
 
@@ -27,6 +28,7 @@ import { computed, onMounted } from "vue";
 import ProductGallery from "../components/productDetail/ProductGallery.vue";
 import ProductInfo from "../components/productDetail/ProductInfo.vue";
 import ProductSpecifications from "../components/productDetail/ProductSpecifications.vue";
+import PopularProducts from "../components/main/section-cards/PopularProducts.vue";
 
 const route = useRoute();
 const productId = route.params.id;

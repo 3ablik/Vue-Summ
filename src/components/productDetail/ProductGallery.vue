@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col items-start">
-    <section class="w-full">
+    <section class="w-full bg-[#f5f5f5] rounded-[25px]">
       <img
         :src="mainImage"
         class="object-contain grow w-full rounded-3xl bg-blend-darken aspect-[1.12] max-md:mt-10 max-md:max-w-full"
@@ -12,7 +12,7 @@
         <div
           v-for="(image, index) in thumbnails"
           :key="index"
-          class="w-3/12 max-md:ml-0 max-md:w-full"
+          class="w-[125px] h-[131px] bg-[#f5f5f5] rounded-[15px] max-md:ml-0 max-md:w-full"
         >
           <img
             :src="image"
