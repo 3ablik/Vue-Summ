@@ -5,8 +5,8 @@ const props = defineProps({
   image: String,
   category: String,
   name: String,
-  discount: String,
-  discountPrice: String,
+  discount: Boolean,
+  discountPrice: Number,
   price: {
     type: String,
     required: false,

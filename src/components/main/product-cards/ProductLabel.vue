@@ -54,7 +54,7 @@ const props = defineProps({
     validator: (value) => ["new", "discount"].includes(value.toLowerCase()),
   },
   percent: {
-    type: String,
+    type: Number,
     default: "",
   },
   price: {
