@@ -22,11 +22,13 @@
       >
         В корзину
       </button>
-      <button
-        class="gap-2.5 self-stretch px-11 py-2.5 text-amber-300 rounded-md border border-amber-300 border-solid max-md:px-5"
+      <router-link to="/checkout">
+        <button
+          class="gap-2.5 self-stretch px-11 py-2.5 text-amber-300 rounded-md border border-amber-300 border-solid max-md:px-5"
+        >
+          Купить в 1 клик
+        </button></router-link
       >
-        Купить в 1 клик
-      </button>
     </div>
     <h2 class="mt-14 font-bold uppercase text-neutral-700 max-md:mt-10">
       описание товара:

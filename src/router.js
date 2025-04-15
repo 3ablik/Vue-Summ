@@ -4,6 +4,7 @@ import About from "./views/About.vue";
 import Product from "./views/Product.vue";
 import Catalog from "./views/Catalog.vue";
 import ProductsCategory from "./components/catalog/ProductsCategory.vue";
+import Checkout from "./views/CheckoutPage.vue";
 import ContactList from "./views/ContactList.vue";
 import Sales from "./views/SaleList.vue";
 
@@ -15,6 +16,7 @@ const routes = [
   { path: "/contacts", component: ContactList },
   { path: "/sales", component: Sales },
   { path: "/product/:id", component: Product, props: true },
+  { path: "/checkout", component: Checkout },
 ];
 const router = createRouter({
   history: createWebHistory(),
