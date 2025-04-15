@@ -1,4 +1,29 @@
 <template>
+  <aside>
+    <h2>Категория</h2>
+    <div>
+      <div
+        v-for="category in categories"
+        :key="category"
+        class="flex flex-col items-center justify-between min-h-[38px] mt-[12px]"
+      >
+        <router-link
+          :to="'/catalog/' + category"
+          class="flex flex-col items-center"
+        >
+          <div class="stroke w-full max-w-[254px] h-[1px] bg-[#B5B5B5]"></div>
+
+          <div class="flex items-center justify-baseline w-full max-w-[254px]">
+            <div class="w-2 h-2 rounded-full bg-[#B5B5B5]"></div>
+            <span class="text-[16px] text-[#151515] font-normal ml-5">{{
+              category
+            }}</span>
+          </div>
+        </router-link>
+      </div>
+    </div>
+  </aside>
+
   <section
     class="box-border flex flex-col items-start p-5 mx-auto my-0 w-full max-w-[1254px] max-md:max-w-[991px] max-sm:max-w-screen-sm"
   >
@@ -93,4 +118,19 @@ const sortedProducts = computed(() => {
     }
   });
 });
+const categories = [
+  "Шкафы (МДФ)",
+  "Шкафы (распашные)",
+  "Шкафы (купе)",
+  "Спальные гарнитуры",
+  "Кровати",
+  "Диваны",
+  "Пуфики",
+  "Кухонные гарнитуры",
+  "Столы",
+  "Прихожие",
+  "Комоды",
+  "Стеллажи",
+  "Б/У",
+];
 </script>
